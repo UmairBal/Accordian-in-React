@@ -1,0 +1,102 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f7fa;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wrapper button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.wrapper button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+
+.wrapper button:active {
+    background: linear-gradient(135deg, #5b0e99, #1f60d6);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transform: translateY(0);
+}
+
+.accordian {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 10px 10px 8px rgba(0,0,0,0.4);
+    overflow-y: scroll;
+}
+
+.item {
+    border-bottom: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    background-color: #f9fafb;
+    transition: background-color 0.3s ease;
+}
+
+.title:hover {
+    background-color: #e0f0ff;
+}
+
+.title h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+
+.title span {
+    font-size: 1.5rem;
+    color: #007bff;
+    transition: transform 0.3 ease;
+}
+
+.content {
+    padding: 15px 20px;
+    font-size: 1rem;
+    color: #555;
+    background-color: #fdfdfd;
+    line-height: 1.6;
+    animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+    from{
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 200px;
+    }
+}
