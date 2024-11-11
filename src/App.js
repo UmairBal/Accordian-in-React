@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       <Accordian />
       <RandomColor />
+      <hr />
       <StarRating noOfStars = {10}/>
     </div>
   );
