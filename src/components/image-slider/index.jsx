@@ -55,7 +55,7 @@ const ImageSlider = ({ url }) => {
     }
 
     return (
-        <div className="container">
+        <div className="container1">
             <BsArrowLeftCircleFill onClick={handlePrevious} className='arrow arrow-left' />
             {
                 images ?
